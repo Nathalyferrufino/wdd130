@@ -1,6 +1,6 @@
     :root {
         --primary-color: rgb(194, 194, 245);
-        --secondary-color: rgb(253, 253, 210);
+        --secondary-color: rgb(168, 252, 152);
         --accent1-color: rgb(15, 15, 83);
         --accent2-color: rgb(255, 230, 88);
         --heading-font: "Times New Roman", "Georgia", serif;
@@ -34,8 +34,8 @@
     
     h1, h2 {
         font-family: var(--heading-font);
-        text-align: center; 
-        color: var(--primary-color);
+        color: var(--secondary-color);
+        text-align: center;
     }
 
     nav, p, section,
@@ -50,6 +50,14 @@
 
     .hero {
         position: relative;
+    }
+
+    hero h1{
+        position: absolute;
+    }
+
+    hero article{
+        position: absolute;
     }
 
     .hero img {
@@ -69,19 +77,8 @@
         color: #fff;
     }
 
-    article {
-        position: relative;
-        color: var(--accent1-color);
-    }
 
     .hero article img {
         float: right;
         width: 125px;
     }
-
-    indent h2 {
-            position: absolute;
-    bottom: -40px;
-    left: 0px;
-    position: relative;
-}
