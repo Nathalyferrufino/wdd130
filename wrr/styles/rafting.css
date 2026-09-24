@@ -30,8 +30,7 @@
         width: 840px;
         margin: 0 auto;
     }
-
-    
+ 
     h1, h2 {
         font-family: var(--heading-font);
         color: var(--secondary-color);
@@ -62,11 +61,28 @@
         position: absolute;
     }
 
+    .hero p{
+        background-color: var(--accent1-color);
+        color: #fff;
+        opacity: 0.7;
+        margin: 20px;
+        position: relative;
+        top: -150px;
+        text-align: left;
+    }
+
+
     .hero img {
         display: block;
         width: 100%;
         height: auto;
     }
+
+    .hero article img {
+        float: right;
+        width: 125px;
+        border: solid black;
+       }
 
     h1 {
         position: absolute;
@@ -89,7 +105,3 @@
     }
 
 
-    .hero article img {
-        float: right;
-        width: 125px;
-       }
