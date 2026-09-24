@@ -1,6 +1,6 @@
     :root {
-        --primary-color: rgb(194, 194, 245);
-        --secondary-color: rgb(168, 252, 152);
+        --primary-color: rgb(210, 210, 255);
+        --secondary-color: rgb(255, 252, 212);
         --accent1-color: rgb(15, 15, 83);
         --accent2-color: rgb(255, 230, 88);
         --heading-font: "Times New Roman", "Georgia", serif;
@@ -36,6 +36,7 @@
         font-family: var(--heading-font);
         color: var(--secondary-color);
         text-align: center;
+        background-color: var(--accent1-color);
     }
 
     nav, p, section,
@@ -54,6 +55,7 @@
 
     hero h1{
         position: absolute;
+        text-align: center;
     }
 
     hero article{
@@ -77,8 +79,17 @@
         color: #fff;
     }
 
+    h2 {
+        position: absolute;
+        width: 47%;
+        padding: 10px;
+        text-align: center;
+        background-color: var(--accent1-color);
+        color: #fff;
+    }
+
 
     .hero article img {
         float: right;
         width: 125px;
-    }
+       }
