@@ -5,24 +5,32 @@
 }
 
 body {
-font-size: 16px;
-font-family: nunito, Arial, sans-serif;
+    font-size: 16px;
+    font-family: nunito, Arial, sans-serif;
 }
 
 nav {
     background-color: pink;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 h1 {
     color: pink;
     padding: 1rem;
+    border-bottom: #000;
 }
 
 main img {
@@ -40,7 +48,8 @@ p {
 }
 
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 aside {
@@ -48,9 +57,12 @@ aside {
     margin: 1rem;
     border: 1px solid rgb(0, 0, 0/ 0.2);
     padding: 1rem;
+    position: relative;
     background-color: #eee;
     color: #333;
     text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -89,4 +101,16 @@ aside h2 {
     bottom: -40px;
     left: 0px;
     position: relative;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
